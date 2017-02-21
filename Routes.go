@@ -45,4 +45,10 @@ var routes = Routes{
                 "/events/{eventId}",
                 EventShow,
         },
+        Route {
+                "EventAdd",
+                "POST",
+                "/events/add",
+                EventAdd,
+        },
 }
