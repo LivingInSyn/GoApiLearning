@@ -86,5 +86,6 @@ func AddEvent(le *LogEvent) *LogEvent {
 	lastId, _ := result.LastInsertId()
 	le.Id = int(lastId)
 
+	closeConnection(db)
 	return le
 }
